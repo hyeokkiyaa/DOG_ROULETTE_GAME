@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <service android:name=".MusicService"></service>
+        <activity android:name=".Main_game"/>
     </application>
 
 </manifest>
