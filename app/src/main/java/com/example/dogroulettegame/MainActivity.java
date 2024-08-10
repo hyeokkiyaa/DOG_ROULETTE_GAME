@@ -24,12 +24,24 @@ public class MainActivity extends AppCompatActivity {
         startService(new Intent(getApplicationContext(), MusicService.class));
     }
 
-
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        stopService(new Intent(getApplicationContext(), MusicService.class));
+    }
 
     @Override
-    protected void onUserLeaveHint()
+    protected void onResume()
     {
-        super.onUserLeaveHint();
+        super.onResume();
+        startService(new Intent(getApplicationContext(), MusicService.class));
+    }
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
         stopService(new Intent(getApplicationContext(), MusicService.class));
     }
 
