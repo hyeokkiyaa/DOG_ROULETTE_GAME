@@ -19,4 +19,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background_dog" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="132dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/starting_button"
+        android:background="@android:color/transparent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
