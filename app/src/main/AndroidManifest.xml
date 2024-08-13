@@ -23,6 +23,7 @@
         </activity>
         <service android:name=".MusicService"></service>
         <activity android:name=".Main_game"/>
+        <activity android:name=".Selected"/>
     </application>
 
 </manifest>
