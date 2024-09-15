@@ -2,6 +2,8 @@ package com.example.dogroulettegame;
 
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
+import androidx.activity.OnBackPressedDispatcher;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Selected extends AppCompatActivity {
@@ -11,11 +13,16 @@ public class Selected extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.selected);
+
+        OnBackPressedDispatcher onBackPressedDispatcher = getOnBackPressedDispatcher();
+        onBackPressedDispatcher.addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                // Handle the back button event
+                // This replaces the old onBackPressed() method
+            }
+        });
     }
 
-    @Override
-    public void onBackPressed() {
-        //super.onBackPressed();
-        super.onBackPressed();
-    }
+
 }
