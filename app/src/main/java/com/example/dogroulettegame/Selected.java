@@ -12,4 +12,10 @@ public class Selected extends AppCompatActivity {
 
         setContentView(R.layout.selected);
     }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        super.onBackPressed();
+    }
 }
