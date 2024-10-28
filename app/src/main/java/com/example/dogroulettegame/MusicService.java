@@ -37,5 +37,6 @@ public class MusicService extends Service {
         mediaPlayer.stop();
         mediaPlayer.release();
         super.onDestroy();
+
     }
 }
